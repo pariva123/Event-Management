@@ -23,7 +23,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installation
 1. **Clone the Repository**
-   git clone https://github.com/your-username/event-management-system.git
+   git clone https://github.com/pariva123/event-management.git
    cd event-management-system
 
 ## Set Up the Database
