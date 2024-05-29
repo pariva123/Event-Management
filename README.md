@@ -1,95 +1,66 @@
-# Event Management 
+# Event Management
 
 ## Overview
-The Event Management System is a Java-based application designed to facilitate the organization and management of events. This system provides features for event creation, participant registration, scheduling, and reporting.
+The Event Management System is a python-based application designed to facilitate the organization and management of events. This system provides features for event creation, participant registration, scheduling, and reporting.
 
 ## Features
 - Event creation and management
 - Participant registration and tracking
 - Scheduling and calendar integration
 - Reporting and analytics
-- User authentication and roles
+- User authentication and role
 
 ## Technologies Used
-- **Java**: Core programming language used for developing the application
-- **MySQL/SQLite**: Database management system for storing and managing data
-- **Swing/JavaFX**: (Optional) for building the graphical user interface
+- **Python**: Core programming language used for developing the application
+- **unittest/pytest**: Testing frameworks
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
-- Java Development Kit (JDK) installed
-- MySQL/SQLite installed and configured
-- Git installed
+- Python 3.x installed on your machine
 
 ## Installation
 1. **Clone the Repository**
-   git clone https://github.com/pariva123/event-management.git
-   cd event-management-system
+   git clone https://github.com/pariva123/Event-Management.git
+   cd metesting
+   
+## Install Dependencies
+Install required Python packages. You can use requirements.txt if your project has dependencies:
 
-## Set Up the Database
+pip install -r requirements.txt
 
-Create a new database for the project. For MySQL:
-sql
-CREATE DATABASE event_management;
-Import the database schema from the database/event_management.sql file.
+## Usage
+## Run Tests
 
-mysql -u your-username -p event_management < database/event_management.sql
+Execute the test suite using your preferred testing framework. For example, if using unittest:
 
-## Configure Database Connection
+python -m unittest discover -s tests
+Or if using pytest:
 
-Open src/main/resources/db.properties.
-Update the database connection details:
-properties
-db.url=jdbc:mysql://localhost:3306/event_management
-db.username=your-username
-db.password=your-password
+pytest
+## Generate Test Reports
+Use the appropriate command or plugin to generate test reports (e.g., pytest plugins for HTML reports):
 
-## Build and Run the Application
-
-Use your preferred IDE (e.g., IntelliJ IDEA, Eclipse) to open the project.
-## Build and run the application.
-Usage
-## Start the Application
-Run the main application class to start the Event Management System.
-
-## Log In or Register
-Use the registration page to create a new account or log in with existing credentials.
-
-## Manage Events
-Create, update, and delete events.
-Register participants and manage their information.
-Schedule events and manage the event calendar.
-
-## Generate Reports
-Generate reports for event attendance, participant details, and other analytics.
+pytest --html=report.html
 
 ## Project Structure
-perl
-event-management-system/
+
+metesting/
+├── tests/
+│   ├── test_sample.py        # Example test case
 ├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── com/
-│   │   │   │   ├── eventmanagement/
-│   │   │   │   │   ├── Main.java           # Main application class
-│   │   │   │   │   ├── controllers/        # MVC controllers
-│   │   │   │   │   ├── models/             # Data models
-│   │   │   │   │   ├── views/              # UI views (if using Swing/JavaFX)
-│   │   ├── resources/
-│   │   │   ├── db.properties               # Database configuration
-├── database/
-│   ├── event_management.sql                # Database schema and initial data
-├── README.md                               # Project README file
-├── requirements.txt                        # Project dependencies (if any)
+│   ├── main.py               # Main application script
+│   ├── utils.py              # Utility functions
+├── README.md                 # Project README file
+├── requirements.txt          # Python dependencies
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
 
 ## Fork the repository.
-Create a new branch (git checkout -b features).
+Create a new branch (git checkout -b feature/your-feature).
 Make your changes.
 Commit your changes (git commit -m 'Add some feature').
-Push to the branch (git push origin features).
+Push to the branch (git push origin feature/your-feature).
 Create a Pull Request.
 
 ## License
