@@ -14,7 +14,7 @@ Data Persistence: Store and retrieve data using SQL databases.
 
 ## Technology Stack
 
-Front End: Java (Swing or JavaFX for GUI)
+Front End: Java 
 Data Configuration: XML
 Database Management: SQL (e.g., MySQL, PostgreSQL)
 
